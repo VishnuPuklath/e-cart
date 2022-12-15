@@ -14,8 +14,13 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    print('current screen height is' +
+        MediaQuery.of(context).size.height.toString());
     return Scaffold(
-      body: Column(children: [HomeAppBar(), FoodPageBody()]),
+      body: Column(children: [
+        HomeAppBar(),
+        FoodPageBody(),
+      ]),
     );
   }
 }
